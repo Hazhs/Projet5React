@@ -7,15 +7,15 @@ import PageNotFound from '../Pages/PageNotFound';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 
-function AppRouter () {
+export default function AppRouter () {
     return (
         <React.StrictMode>
             <Router>
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />}/>
-                    <Route path="/a-propos" element={<About />}/>
-                    <Route path="/Location" element={<Location />}/>
+                    <Route path="/about" element={<About />}/>
+                    <Route path="/location/:id" element={<Location />}/>
                     <Route path="/404" element={<PageNotFound />}/>
                     <Route path="*" element={<PageNotFound />}/> 
                 </Routes>
@@ -24,5 +24,3 @@ function AppRouter () {
         </React.StrictMode>
     );
 };
-
-export default AppRouter
