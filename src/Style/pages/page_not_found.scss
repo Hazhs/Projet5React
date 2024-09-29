@@ -1,0 +1,41 @@
+.page-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+
+    span {
+        color: #FF6060;
+        font-weight: bold;
+        font-size: 200px; 
+    };
+
+    p {
+        padding-bottom: 40px;
+        color: #FF6060;
+        font-size: 25px;
+    };
+
+    Link {
+        color:black;
+    };
+
+    @media (min-width:320px) and (max-width: 650px){
+        padding : 40px 0 0 0;
+        height: 80vw;
+        justify-content: space-between;
+
+        span {
+            font-size: 80px;
+        };
+
+        p {
+            font-size: 20px;
+            text-align: center;
+        };
+        a {
+            color:black;
+        };
+
+    }
+}

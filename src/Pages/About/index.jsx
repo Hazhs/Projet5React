@@ -1,6 +1,5 @@
-import '../../Style/index.scss';
 import CollapseMenu from '../../Components/Collapse.jsx';
-import PageBanner from '../../Components/PageBanner';
+import PageBanner from '../../Components/Banner.jsx';
 
 
 const collapse1 = {
@@ -22,7 +21,7 @@ const collapse4 = {
 
 function About () {
     return (
-    <div  className='main-container'>
+    <div  className='about-container'>
         <PageBanner imgPath='../../assets/img/Source2.png' content=''/>
         <div className='about'>
             <CollapseMenu collapseData ={collapse1} />
