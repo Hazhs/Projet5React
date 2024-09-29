@@ -1,18 +1,10 @@
 import React from 'react'
-import Carrousel from '../../Components/Carrousel.jsx'
-//import Collapse from '../../Components/Collapse.jsx'
-import data from '../../data.json'
-import { useParams } from 'react-router-dom'
+import Location from '../../Components/Location.jsx'
 
-// Composant Carrousel/Tag/Rating/Collapse/ description directement dans la fonction de Location/index.jsx
-export default function Location() {
-  const { id } = useParams()
-  const item = data.find((item) => item.id === id)
-
+export default function LocationPage() {
   return (
-    <div className='location'>
-        <Carrousel locationId={item}/>
-
+    <div>
+    <Location />
     </div>
   )
 }

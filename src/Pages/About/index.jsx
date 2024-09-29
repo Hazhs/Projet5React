@@ -23,7 +23,7 @@ const collapse4 = {
 function About () {
     return (
     <div  className='main-container'>
-        <PageBanner imgPath='../../assets/img/Source2.png' />
+        <PageBanner imgPath='../../assets/img/Source2.png' content=''/>
         <div className='about'>
             <CollapseMenu collapseData ={collapse1} />
             <CollapseMenu collapseData ={collapse2} />

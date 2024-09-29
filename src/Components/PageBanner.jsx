@@ -17,7 +17,10 @@ PageBanner.propTypes = {
         PropTypes.string, 
         PropTypes.object, 
     ]).isRequired,
-    content : PropTypes.string.isRequired,
+    content : PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.oneOf([''])
+    ])
 };
 
 export default PageBanner

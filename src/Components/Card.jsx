@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import data from '../data.json';
 
-//Générer une card
 export default function Card({cardElement}) {
   const backgroundImg = {
     backgroundImage:`url(${cardElement.cover})`,
