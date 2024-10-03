@@ -9,5 +9,5 @@ root.render(
     <div>
       <AppRouter />
     </div>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
