@@ -38,7 +38,7 @@
 
         .collapse-menu {
             justify-content: space-between;
-        };
+        }
     };
 
     .tagList {
@@ -46,16 +46,16 @@
         flex-flow: row wrap; 
 
         .tag {
-        background-color: $base-color;
-        padding: 5px 10px 5px 10px;
-        color: white;
-        border-radius: 25px;
-        font-weight: 600;
-        width:fit-content;
-        margin-right: 10px;
-        text-align: center;
-        min-width: 125px;
-        };
+            background-color: $base-color;
+            padding: 5px 10px 5px 10px;
+            color: white;
+            border-radius: 25px;
+            font-weight: 600;
+            width:fit-content;
+            margin-right: 10px;
+            text-align: center;
+            min-width: 125px;
+        }
     };
 
     .location-info {
@@ -67,13 +67,13 @@
         justify-content: space-between ;
 
         p {
-        color: black;
-        margin : 0px 0px 20px 0px;
+            color: black;
+            margin : 0px 0px 20px 0px;
         };
 
         h1 {
-        margin: 0px;
-        };
+            margin: 0px;
+        }
     };
 
     .host-and-rating {
@@ -95,9 +95,9 @@
             .host-picture {
                 border-radius: 100px;
                 height: 60px;
-                margin-left: 10px ;
-            };
-        };
+                margin-left: 10px;
+            }
+        }
     };
 
     .location-collapse {  
@@ -105,7 +105,7 @@
 
         .collapse-content {
             width: 100%;
-        };
+        }
     };
 
     .description-equipment {
@@ -129,8 +129,8 @@
 
             button {
                 justify-content: space-between;
-            };
-        };
+            }
+        }
     };
 
     @media (min-width:320px) and (max-width: 650px) {
@@ -140,8 +140,8 @@
             span {
                 opacity : 0;
             }
-        }
-        
+        };
+
         .location {
             flex-direction: column;
 
@@ -154,13 +154,13 @@
                 p {
                     margin-top: 15px;
                     font-weight: 500;
-                }
+                };
                 .tag {
                     border-radius: 10px;
                     margin-bottom: 15px;
                     font-size: 14px;
                 }
-            }
+            };
 
             .host-and-rating {
                 flex-direction: row-reverse;
@@ -171,11 +171,10 @@
                 .host {
                     margin: 0;
                 }
-            };
+            }
         };
         .description-equipment {
             flex-direction: column;
         }
-
     }
 }

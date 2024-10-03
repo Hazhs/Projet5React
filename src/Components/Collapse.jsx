@@ -28,7 +28,7 @@ function CollapseMenu ({collapseData, customClass}) {
                 {collapseData.title}
                 <FontAwesomeIcon icon = {faChevronUp} 
                 style={{fontSize:'1.3rem'}} 
-                className={ `icon ${collapseIsOpen ? 'rotated chevron-up' : 'chevron-up'}`}/>
+                className={`icon ${collapseIsOpen ? 'rotated chevron-up' : 'chevron-up'}`}/>
                 </button>
                 <div ref={contentRef} className={`collapse-content ${collapseIsOpen ? 'collapse-content-show' : ''}`}>
                     {collapseData.content}

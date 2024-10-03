@@ -6,7 +6,12 @@ $background-color : #F6F6F6;
 @import './pages/page_not_found.scss';
 @import './pages/_location.scss';
 
+html  {
+  display: flex;
+  justify-content: center;
+}
 body {
+  max-width: 1600px;
   margin: 0px 0px 125px 0px;
   font-family:'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,9 +31,7 @@ body {
     padding-bottom: 250px;
     position: relative;
   }
-}
-
-
+};
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -49,17 +52,17 @@ header {
   nav {
     display: flex;
     align-items: center;
-  }
+  };
 
   .nav-element {
-      font-size: 20px;
-      margin-left: 35px;
-      text-decoration: none;
-      color: black;
+    font-size: 20px;
+    margin-left: 35px;
+    text-decoration: none;
+    color: black;
 
-      &:hover  {
-          border-bottom: 2px solid black;
-      };
+    &:hover  {
+      border-bottom: 2px solid black;
+    }
   };
 
   .active {
@@ -72,7 +75,7 @@ header {
     .nav-element {
       font-size: 15px;
       margin-left:25px;
-    }
+    };
 
     img {
       height: 50px;
@@ -109,10 +112,9 @@ footer {
     
     img {
       height: 30%;
-    };
-
-}
-}
+    }
+  }
+};
 
 .banner {
   width: 100%;
@@ -136,7 +138,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box
+    box-sizing: border-box;
   };
 
   @media (min-width:320px) and (max-width: 650px) {
@@ -150,7 +152,6 @@ footer {
       font-size: 25px;
       padding: 15px;
       justify-content: flex-start;
-
     }
   }
 }
