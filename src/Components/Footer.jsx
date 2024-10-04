@@ -1,6 +1,7 @@
-import React from "react";
 
-function Footer() {
+import React from "react"
+
+export default function Footer() {
   return (
     <footer>
       <img
@@ -9,7 +10,6 @@ function Footer() {
       />
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>
-  );
+  )
 }
 
-export default Footer;

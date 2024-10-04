@@ -1,58 +1,57 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, Navigate } from 'react-router-dom';
-import Slideshow from './Slideshow.jsx';
-import CollapseMenu from './Collapse.jsx';
-import Tag from './Tag.jsx';
-import Rating from './Rating.jsx';
-import data from '../data.json';
+
+import React, { useState, useEffect } from 'react'
+import { useParams, Navigate } from 'react-router-dom'
+import Slideshow from './Slideshow.jsx'
+import CollapseMenu from './Collapse.jsx'
+import Tag from './Tag.jsx'
+import Rating from './Rating.jsx'
+import data from '../data.json'
 
 export default function Location() {
-  const { id } = useParams();
-  const [isValidId, setIsValidId] = useState(false);
-  const [checked, setChecked] = useState(false);
+
+  const { id } = useParams()
+  const [isValidId, setIsValidId] = useState(false)
+  const [checked, setChecked] = useState(false)
 
   useEffect(() => {
-    const idsArray = data.map((item) => String(item.id));
+    const idsArray = data.map((item) => String(item.id))
     if (idsArray.includes(id)) {
-      setIsValidId(true);
+      setIsValidId(true)
     } else {
-      setIsValidId(false);
+      setIsValidId(false)
     }
-    setChecked(true);
-  }, [id]);
+    setChecked(true)
+  }, [id])
 
   if (!checked) {
-    return <p>Chargement...</p>;
+    return <p>Chargement...</p>
   }
   if (!isValidId) {
-    return <Navigate to="/404" />;
+    return <Navigate to="/404" />
   }
 
   const item = data.find((item) => item.id === id);
-  const hostName = item.host.name;
-  const name = hostName.split(' ');
+  const hostName = item.host.name
+  const name = hostName.split(' ')
 
   function EquipmentContent({ equipmentData }) {
     return (
       <div>
         {equipmentData.map((item, index) => (
-          <span key={index}>
-            {item.trim()}
-            <br />
-          </span>
+          <span key={index}>{item.trim()}<br /></span>
         ))}
       </div>
-    );
+    )
   }
 
   const description = {
     title: 'Description',
     content: item.description,
-  };
+  }
   const equipment = {
     title: 'Équipements',
-    content: EquipmentContent({ equipmentData: item.equipments }),
-  };
+    content: EquipmentContent({ equipmentData: item.equipments })
+  }
 
   return (
     <div className="location-page">
@@ -66,9 +65,7 @@ export default function Location() {
         <div className="host-and-rating">
           <div className="host">
             <span>
-              {name[0]}
-              <br />
-              {name[1]}
+              {name[0]}<br />{name[1]}
             </span>
             <img
               className="host-picture"
@@ -82,13 +79,11 @@ export default function Location() {
       <div className="description-equipment">
         <CollapseMenu
           collapseData={description}
-          customClass={'location-collapse'}
-        />
+          customClass={'location-collapse'}/>
         <CollapseMenu
           collapseData={equipment}
-          customClass={'location-collapse'}
-        />
+          customClass={'location-collapse'}/>
       </div>
     </div>
-  );
+  )
 }

@@ -1,19 +1,18 @@
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-function PageBanner({ content, imgPath }) {
+export default function PageBanner({ content, imgPath }) {
+  PageBanner.propTypes = {
+    imgPath: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
+    content: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([''])])
+  }
   const backgroundImg = {
-    backgroundImage: `url(${imgPath})`,
-  };
+    backgroundImage: `url(${imgPath})`
+  }
   return (
     <div className="banner" style={backgroundImg}>
       <h1>{content}</h1>
     </div>
-  );
+  )
 }
 
-PageBanner.propTypes = {
-  imgPath: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
-  content: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([''])]),
-};
-
-export default PageBanner;
