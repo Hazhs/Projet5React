@@ -1,6 +1,7 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 export default function Rating({ rating }) {
   const stars = Array(5)
@@ -17,5 +18,6 @@ export default function Rating({ rating }) {
       />
     ))
 
-  return <div>{stars}</div>;
+  return <div>{stars}</div>
 }
+
