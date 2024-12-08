@@ -11,7 +11,7 @@ export default function Gallery() {
     <div className="home-container">
       <PageBanner
         content="Chez vous, partout et ailleurs"
-        imgPath="../../assets/img/Source1.png"/>
+        imgPath="/assets/img/Source1.png"/>
       <div className="gallery">
         {dataCards}
       </div>

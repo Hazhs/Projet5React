@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <header>
-      <img src="/../assets/img/LogoKasa.png" className="logo-kasa" alt="logo Kasa"/>
+      <img src={`${process.env.PUBLIC_URL}/assets/img/LogoKasa.png`} className="logo-kasa" alt="logo Kasa"/>
       <nav>
         <NavLink to="/" className={({ isActive }) =>
             isActive ? 'nav-element active' : 'nav-element'}>

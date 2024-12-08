@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Home from '../Pages/Home'
 import About from '../Pages/About'
 import Location from '../Pages/Location'
@@ -19,7 +19,7 @@ function ScrollToTop() {
 export default function AppRouter() {
   return (
     <React.StrictMode>
-      <BrowserRouter basename="/Projet5React/">
+      <Router basename="/">
         <ScrollToTop />
         <Header />
         <Routes>
@@ -30,7 +30,7 @@ export default function AppRouter() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </Router>
     </React.StrictMode>
   )
 }

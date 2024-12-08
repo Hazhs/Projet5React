@@ -7,7 +7,7 @@ export default function PageBanner({ content, imgPath }) {
     content: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([''])])
   }
   const backgroundImg = {
-    backgroundImage: `url(${imgPath})`
+    backgroundImage: `url(${process.env.PUBLIC_URL}${imgPath})`
   }
   return (
     <div className="banner" style={backgroundImg}>
