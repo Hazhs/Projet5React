@@ -19,7 +19,7 @@ function ScrollToTop() {
 export default function AppRouter() {
   return (
     <React.StrictMode>
-      <Router basename="/">
+      <Router basename="/Projet5React/">
         <ScrollToTop />
         <Header />
         <Routes>
