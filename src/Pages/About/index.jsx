@@ -26,7 +26,9 @@ const collapse4 = {
 export default function About() {
   return (
     <div className="about-container">
-      <PageBanner imgPath="/assets/img/Source2.png" content="" />
+      <PageBanner 
+      content="" 
+      imgPath="/assets/img/Source2.png"/>
       <div className="about">
         <CollapseMenu collapseData={collapse1} />
         <CollapseMenu collapseData={collapse2} />

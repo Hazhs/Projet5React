@@ -45,7 +45,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 30px 0px 40px 0px;
+  margin: 30px 20px 40px 20px;
   box-sizing: border-box;
 
   img {
@@ -120,9 +120,9 @@ footer {
 }
 
 .banner {
-  width: 100%;
+  width: auto;
   height: 175px;
-  margin-bottom: 35px;
+  margin: 0 20px 35px 20px;
   background-position: center;
   background-size: cover;
   border-radius: 25px;

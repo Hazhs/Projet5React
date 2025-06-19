@@ -5,6 +5,11 @@
   width: 100%;
   margin: 0px 0px 0px 0px;
   box-sizing: border-box;
+
+  .banner {
+    width: calc(100% - 40px); ;
+    margin : 0 20px 15px 20px;
+  }
 }
 
 .collapse-menu {
