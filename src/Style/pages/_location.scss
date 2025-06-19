@@ -1,5 +1,12 @@
 .location-page {
+
   margin: 35px 0px 0px 0px;
+  width: 100%;
+  
+  @media (min-width: 651px) {
+    width: calc(100% - 60px);
+    margin: 35px 30px 0px 30px;
+  }
 
   .slideshow {
     border-radius: 25px;
